@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="android.view.MotionEvent"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="android.view.View.OnTouchListener"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.view.ScaleGestureDetector"/>
+<fullyQualifiedTypeName name="com.example.newtimes.MiddleActivityData"/>
+<fullyQualifiedTypeName name="android.util.DisplayMetrics"/>
+<fullyQualifiedTypeName name="android.opengl.GLSurfaceView.EGLConfigChooser"/>
+<fullyQualifiedTypeName name="android.opengl.GLSurfaceView.Renderer"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="android.view.Window"/>
+<fullyQualifiedTypeName name="com.example.newtimes.R"/>
+<fullyQualifiedTypeName name="com.example.newtimes.R.drawable"/>
+<fullyQualifiedTypeName name="android.opengl.GLU"/>
+<fullyQualifiedTypeName name="javax.microedition.khronos.opengles.GL"/>
+<fullyQualifiedTypeName name="com.example.newtimes.R.layout"/>
+<fullyQualifiedTypeName name="com.example.newtimes.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.example.newtimes.Constants"/>
+<fullyQualifiedTypeName name="javax.microedition.khronos.opengles.GL11"/>
+<fullyQualifiedTypeName name="javax.microedition.khronos.opengles.GL10"/>
+<fullyQualifiedTypeName name="javax.microedition.khronos.opengles.GL11ExtensionPack"/>
+<fullyQualifiedTypeName name="java.nio.IntBuffer"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="qwerty.FBOController"/>
+</qualifiedTypeNameHistroy>

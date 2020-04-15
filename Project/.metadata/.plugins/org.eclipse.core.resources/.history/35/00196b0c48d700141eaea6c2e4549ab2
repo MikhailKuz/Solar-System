@@ -1,0 +1,72 @@
+package com.example.newtimes;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
+import android.graphics.*;
+import android.content.Context;
+import android.opengl.GLSurfaceView; //2
+//1
+class SquareRenderer implements GLSurfaceView.Renderer
+{
+	
+	
+	public SquareRenderer(boolean useTranslucentBackground, Context zcontext) {
+		mTranslucentBackground = useTranslucentBackground;
+		this.ñontext = zcontext; //1
+		this.mSquare = new Square();
+		}
+  
+public void onDrawFrame(GL10 gl) //4
+{
+
+gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT); //5
+gl.glMatrixMode(GL10.GL_MODELVIEW); //6
+gl.glLoadIdentity(); 
+gl.glTranslatef(0.0f,0.0f, -6.0f); 
+gl.glRotatef(mAngletwo,0.0f,0.0f,1.0f);
+//8
+
+gl.glEnableClientState(GL10.GL_VERTEX_ARRAY); //9
+
+mSquare.draw(gl); //10
+mAngletwo += 17f;
+mTransY += .075f;
+mTransX += .035f;
+}
+
+public void onSurfaceChanged(GL10 gl, int width, int height) //11
+{
+gl.glViewport(0, 0, width, height); //12
+float ratio = (float) width / height;
+gl.glMatrixMode(GL10.GL_PROJECTION); //13
+gl.glLoadIdentity();
+gl.glFrustumf(-ratio, ratio, -1, 1, 1, 10); //14
+}
+
+public void onSurfaceCreated(GL10 gl, EGLConfig config) //15
+{
+int resid = com.example.newtimes.R.drawable.hedly; //1
+mSquare.createTexture(gl, this.context, resid); //2	
+ //16
+gl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, //17
+GL10.GL_FASTEST);
+gl.glViewport(0, 0, 2, 2);
+if (mTranslucentBackground) //18
+{
+gl.glClearColor(0,0,0,0);
+}
+else
+{gl.glClearColor(1,1,1,1);
+}
+ //19
+gl.glShadeModel(GL10.GL_SMOOTH); //20
+gl.glEnable(GL10.GL_DEPTH_TEST); //21
+
+}
+private boolean mTranslucentBackground;
+private Square mSquare;
+private float mTransY;
+private float mTransX;
+private float mAngletwo;
+private float mAngle;
+}

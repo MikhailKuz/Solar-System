@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_picture"
+        android:orientation="vertical" >
+
+       
+        <Button
+            android:id="@+id/button001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Справка"
+            android:textColor="@color/StartColorButton"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Go!"
+            android:textColor="@color/StartColorButton"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="176dp"
+            android:text="The solar system emulator"
+            android:textColor="@color/StartColor"
+            android:textSize="20sp" />
+         <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button001"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/textView200"
+                android:layout_width="wrap_content"
+                android:layout_height="208dp"
+                android:layout_above="@+id/button001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:isScrollContainer="true"
+                android:text="\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nО ПРИЛОЖЕНИИ\n\nДанное приложение является эмулятором солнечной системы.\nПо вашему желанию вы можете либо а)ввести данные о планетах сами, либо б)установить их по умолчанию, нажав на кнопку 'По умолчанию'.\nВ первом случае(а) вы заполняете соответствующие поля. Единицы измерения указаны в самом поле для заполнения, при отсутствии какого-либо текста. Если вы не заполните какие-то поля, тогда значение возьмётся из констант(реальные данные). Переход от одной планеты к другой осуществляется с помощью кнопки 'Вперёд'. Система координат: ось х направлена направо ,а ось y направлена от вас. Солнце вне зависимости от вашего желания будет расположено в точке 0;0. Стоит заметить, что при введении данных вы должны учитывать, что радиус орбиты вращения планеты не должен превышать 26 au, иначе планету не будет постоянно видно. По итогу вы увидите желаемое изображение.\nВнимание! Если вы ввели неверные данные, а потом вспомнили об этом - уже поздно. В таком случае вам не обходимо полностью перезапустить приложение.\nВо втором случае(б) все данные берутся из констант. Перед вами интерфейс, позволяющий вам настроить расстояние от солнца до точки просмотра, действия, при нажатии на экран и качество. Качество, характеризуется целым числом от 3 до +∞. 100 - это высокое качество. Если вы введёте слишком большое значение, то приложение вылетит. После нажатия на кнопку 'Старт' вы увидите желаемую картинку. Чтобы заново настроить параметры необходимо перезапустить приложение.\nТакой свиду неудобный интерфейс(отсутствие кнопки выход и назад) реализован специально, чтобы увеличить площадь анимации.\n\n                  ПРИЯТНОГО ПРОСМОТРА!!!   
+                "
+                android:textColor="@color/BackgroundTextview"
+                android:typeface="serif"
+                android:visibility="invisible" />
+        </ScrollView>
+        
+ 
+    </RelativeLayout>
+
+</LinearLayout>
+

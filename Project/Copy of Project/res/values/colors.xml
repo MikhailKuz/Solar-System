@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="StartColor">#B3AF37</color>
+    <color name="StartColorButton">#009ACD</color>
+     <color name="Background">#000000</color>
+     <color name="BackgroundTextview">#FFFFFF</color>
+     <color name="BackgroundTextview2">#1C1C1C</color>
+</resources>

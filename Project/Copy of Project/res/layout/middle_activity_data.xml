@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/zvzd"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:background="@color/BackgroundTextview2"
+            android:ems="10"
+            android:hint="Введите расстояние"
+            android:textColor="@color/BackgroundTextview"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="1 au=1 астрономическая единица=149 597 870 700 метров"
+            android:textColor="@color/BackgroundTextview" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="Старт"
+            android:textColor="@color/StartColor" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="240sp"
+            android:layout_height="55sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Расстояние от солнца до точки наблюдения(au)"
+            android:textColor="@color/BackgroundTextview"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText21"
+            android:layout_below="@+id/textView3"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Включить"
+                android:textColor="@color/BackgroundTextview"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Выключить"
+                android:textColor="@color/BackgroundTextview"
+                android:textSize="17sp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" >
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Увеличение расстояния"
+                android:textColor="@color/BackgroundTextview"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Увеличение скорости"
+                android:textColor="@color/BackgroundTextview"
+                android:textSize="17sp" />
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вид на планету"
+                android:textColor="@color/BackgroundTextview"
+                android:textSize="17sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup2"
+            android:layout_below="@+id/textView5"
+            android:background="@color/BackgroundTextview2"
+            android:ems="10"
+            android:hint="Введите качество"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="@color/BackgroundTextview" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="240sp"
+            android:layout_height="25sp"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_marginTop="15dp"
+            android:text="Качество(от 3 до +∞)"
+            android:textColor="@color/BackgroundTextview"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="240sp"
+            android:layout_height="55sp"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="16dp"
+            android:text="Функция,при нажатии нажатия на экран"
+            android:textColor="@color/BackgroundTextview"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText21"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Задний фон"
+            android:textColor="@color/BackgroundTextview"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
